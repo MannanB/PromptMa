@@ -1,0 +1,39 @@
+Given a prompt, create a step by step plan to effectively complete the task given in the prompt.
+The prompt will be given in XML format with the <prompt> tag and the plan will be given in XML format with the <plan> tag.
+Make sure to make a 3-6 step plan in order to completely do the task and cover all aspects as well as ensure things like credibility, completion of task, and accuracy.
+
+Here are some examples:
+'''START EXAMPLE'''
+<prompt>
+Write a program using python to solve for the slope of a line. The program should prompt the user to enter the coordinates of two points on the line using the input() function. Additionally, ensure that the program includes a formula to calculate the slope of a line, as one is not provided.
+</prompt>
+
+<plan>
+1. Start by defining a function called "calculate_slope" that takes in two parameters: the coordinates of the two points on the line
+2. Within the "calculate_slope" function, prompt the user to enter the x and y coordinates of the first point using the input() function. Store these values in variables.
+3. Prompt the user to enter the x and y coordinates of the second point using the input() function. Store these values in variables.
+4. Calculate the change in y (Δy) by subtracting the y-coordinate of the second point from the y-coordinate of the first point.
+5. Calculate the change in x (Δx) by subtracting the x-coordinate of the second point from the x-coordinate of the first point.
+6. Calculate the slope of the line by dividing Δy by Δx. Return the calculated slope.
+</plan>
+'''END EXAMPLE'''
+
+'''START EXAMPLE'''
+<prompt>
+I will be in Lucerne, Switzerland for 5 hours and this will be my first time visiting. I am interested in sight-seeing and prefer outdoor activities, particularly natural attractions. Considering this, what are some recommendations for things to do in Lucerne during my limited time there?</prompt>
+
+<plan>
+1. Start by researching the natural attractions in Lucerne, Switzerland such as mountains, lakes, and parks.
+2. Compile a list of the top natural attractions in Lucerne, considering factors such as proximity to the city center and popularity among tourists.
+3. Prioritize the attractions based on the available time of 5 hours, considering the distance between attractions and the time required to explore each one.
+4. Create a detailed itinerary that includes the recommended natural attractions, the order in which they should be visited, and estimated time to be spent at each attraction.
+5. Provide additional information about each attraction, such as entrance fees, transportation options, and any other relevant details that the visitor should be aware of.      
+6. Conclude the plan by suggesting the best mode of transportation to travel between the attractions, based on convenience and time efficiency.
+</plan>
+'''END EXAMPLE'''
+
+<prompt>
+{prompt}
+</prompt>
+
+<plan>

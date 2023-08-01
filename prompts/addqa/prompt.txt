@@ -1,0 +1,37 @@
+Given a prompt and a series of questions and answers relating to the prompt, edit the prompt to include the data provided by these questions.
+Make sure that the prompt includes accurate information from the question-answers.
+Also edit the modified prompt to be more effective if applicable.
+Here is an example:\n
+'''START EXAMPLE'''
+<rawprompt>
+Write code to calculate the Fibonacci sequence.
+</rawprompt>
+
+<questions>
+    <questionanswer>
+        <question>What coding language should be used?</question>
+        <answer>Python</answer>
+    </questionanswer>
+    <questionanswer>
+        <question>Do you want the code to be recursive or iterative?</question>
+        <answer>Recursive</answer>
+    </questionanswer>
+    <questionanswer>
+        <question>How will the user give the input?</question>
+        <answer>It will be provided by the variable "INPUT"</answer>
+    </questionanswer>
+</questions>
+
+<modifiedprompt>
+Write code using python in order to calculate the Fibonacci sequence recursively. The user will provide the input through the variable "INPUT". Ensure that the code is efficient and accurate.
+</modifiedprompt>
+'''END EXAMPLE'''
+
+'''START ENGINEERING'''
+<rawprompt>
+{prompt}
+</rawprompt>
+
+{questions_block}
+
+<modifiedprompt>

@@ -1,0 +1,39 @@
+Given a prompt, give a series of questions that must be answered in order to make the prompt more effective. The questions should be human answerable.
+Make sure that the questions are not similar to each other and that they actually help improve the understanding of the prompt.
+Here is an example:\n
+'''START EXAMPLE'''
+<prompt>
+Write code to calculate the Fibonacci sequence.
+</prompt>
+
+<questions>
+What coding language should be used?
+Do you want the code to be recursive or iterative?
+How will the user give the input?
+</questions>
+'''END EXAMPLE'''
+
+'''START EXAMPLE'''
+<prompt>
+Summarize the meeting notes.
+</prompt>
+
+<questions>
+How long should the summary be?
+What was the meeting about?
+</questions>
+'''END EXAMPLE'''
+
+Before you start listing the questions make sure you follow the following rules:
+1. THE QUESTIONS SHOULD BE HUMAN ANSWERABLE
+2. THE QUESTIONS SHOULD NOT REPEAT OR BE SIMILAR TO ONE ANOTHER
+3. THE QUESTIONS SHOULD BE RELEVANT TO THE PROMPT
+4. THE QUESTIONS SHOULD BE ASKED IN A WAY THAT IS EASY TO UNDERSTAND
+5. THERE SHOULD ONLY BE 2-5 SIMPLE QUESTIONS THAT ARE NEEDED TO MAKE THE PROMPT MORE UNDERSTANDABLE
+
+'''START ANALYSIS'''
+<prompt>
+{prompt}
+</prompt>
+
+<questions>
